@@ -18,4 +18,9 @@ html, body{
   src: url('assets/fonts/Archivo/Fonts/WEB/fonts/Archivo-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: archivoMedium;
+  src: url('assets/fonts/Archivo/Fonts/WEB/fonts/Archivo-Medium.ttf');
+}
+
 
