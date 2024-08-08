@@ -34,38 +34,40 @@ import { ref } from 'vue';
                 <div class="space-y-5">
                     <img src="../assets/pictures/logoFooter.png" alt="Logo">
                     <div class="space-y-5">
-                        <p class="text-white ctaText">
+                        <p class="text-white w-[335px] text-xs ctaText sm:w-[452px] sm:text-sm">
                         Subscribe to our newsletter for upcoming products and best discount for all items
                         </p>
                         <div class="form flex space-x-2">
-                        <input class="placeholder:text-white py-3 px-6 rounded-full bg-black border text-white" id="username" type="text" placeholder="Your email">
+                        <input class="placeholder:text-white w-[199px] sm:w-[316px] placeholder:text-xs py-3 px-6 rounded-full bg-black border text-white" id="username" type="text" placeholder="Your email">
                         <ButtonComponent 
                             :name="'Subscribe'" 
-                            :classes="['bg-white', 'py-2', 'px-6']"
+                            :classes="['bg-white py-2 px-6']"
+                            :styleNameButton="{ fontFamily: 'archivoSemibold', fontSize: '14px' }"
+                            :classNameButton="['font-semibold text-sm']"
                         />
                         </div>
                     </div>
                 </div>
                 <div class="flex space-x-5 text-white">
                     <div class="space-y-2">
-                    <h5>Product</h5>
-                    <ul class="list-none space-y-1">
+                    <h5 class="text-base">Product</h5>
+                    <ul class="list-none text-xs sm:text-sm space-y-1">
                         <li v-for="item in footerProduct" :key="item.name">
                         {{ item.name }}
                         </li>
                     </ul>
                     </div>
                     <div class="space-y-2">
-                    <h5>Categories</h5>
-                    <ul class="list-none space-y-1">
+                    <h5 class="text-base">Categories</h5>
+                    <ul class="list-none text-xs sm:text-sm space-y-1">
                         <li v-for="item in footerCategories" :key="item.name">
                         {{ item.name }}
                         </li>
                     </ul>
                     </div>
                     <div class="space-y-2">
-                    <h5>Social Links</h5>
-                    <ul class="list-none space-y-1">
+                    <h5 class="text-base">Social Links</h5>
+                    <ul class="list-none text-xs sm:text-sm space-y-1">
                         <li v-for="item in footerSocialLinks" :key="item.name">
                         {{ item.name }}
                         </li>
@@ -75,7 +77,7 @@ import { ref } from 'vue';
             </div>
         </div>
         <div class="bottom-footer">
-          <p class="copywrite text-center text-gray-400">
+          <p class="copywrite text-center text-xs text-gray-400">
             © BALLAMAS 2024 by waris
           </p>
         </div>
@@ -84,23 +86,11 @@ import { ref } from 'vue';
   </template>
 
 <style>
-    .ctaText {
+    .ctaText, input, .copywrite, li {
         font-family: 'archivoRegular';
-        font-size: 12px;
-    }
-
-    input{
-        font-family: "archivoRegular";
-        font-size: 12px;
     }
 
     h5 {
         font-family: "archivoMedium";
-        font-size: 12px;
-    }
-
-    .copywrite, li{
-        font-family: "archivoRegular";
-        font-size: 10px;
     }
 </style>

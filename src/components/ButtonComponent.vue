@@ -4,7 +4,6 @@
         props: {
             name: {
             type: String,
-            required: true
             },
             classes: {
             type: Array,
@@ -15,7 +14,22 @@
             },
             iconEnd: {
             type: String,
-            }
+            },
+            numbers: {
+            type: String,
+            },
+            styleNumbersButton: {
+                type: Object, 
+            },
+            styleNameButton: {
+                type: Object, 
+            },
+            classNumbersButton: {
+                type: Array, 
+            },
+            classNameButton: {
+                type: Array, 
+            },
         }
     };
 </script>
@@ -24,15 +38,13 @@
 <template>
     <button :class="classes">
         <img v-if="iconStart" :src="iconStart" class="icon-start" />
-        {{ name }}
+        <span :class="classNameButton" :style="styleNameButton">{{ name }}</span> <span :class="classNumbersButton" :style="styleNumbersButton">{{ numbers }}</span>
         <img v-if="iconEnd" :src="iconEnd" class="icon-end" />
     </button>
 </template>
 
 <style>
     button{
-        font-family: "archivoSemibold";
-        font-size: 14px;
         border-radius: 100px;
         display: flex;
         gap: 3px;

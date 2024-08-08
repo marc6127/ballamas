@@ -27,7 +27,7 @@ const otherPages = ref([
 </script>
 
 <template>
-  <div class="sticky top-0">
+  <div class="sticky top-0 z-[99]">
     <TopbarComponent/>
   <Disclosure as="nav" class="bg-white" v-slot="{ open }">
     <div class="mx-auto px-5 lg:px-8">
@@ -101,7 +101,7 @@ const otherPages = ref([
           v-for="item in navigation"
           :key="item.name"
           :to="item.href"
-          :class="['text-black flex links', { 'current-page': item.current }]"
+          :class="['text-black text-base sm:text-lg lg:text-base flex links', { 'current-page': item.current }]"
           :aria-current="item.current ? 'page' : undefined"
         >
         <span v-if="item.icon">
@@ -114,7 +114,7 @@ const otherPages = ref([
           v-for="item in otherPages"
           :key="item.name"
           :to="item.href"
-          :class="['text-black flex links', { 'current-page': item.current }]"
+          :class="['text-black text-base sm:text-lg lg:text-base flex links', { 'current-page': item.current }]"
           :aria-current="item.current ? 'page' : undefined"
           >{{ item.name }}</li>
         </ul>
@@ -128,7 +128,6 @@ const otherPages = ref([
 <style>
   .links {
     font-family: 'archivoRegular';
-    font-size: 16px;
   }
 
   .fade-in-panel { 

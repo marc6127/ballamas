@@ -23,4 +23,14 @@ html, body{
   src: url('assets/fonts/Archivo/Fonts/WEB/fonts/Archivo-Medium.ttf');
 }
 
+@font-face {
+  font-family: chillaxBold;
+  src: url('assets/fonts/Chillax/Fonts/WEB/fonts/Chillax-Bold.ttf');
+}
+
+@font-face {
+  font-family: chillaxSemiBold;
+  src: url('assets/fonts/Chillax/Fonts/WEB/fonts/Chillax-Semibold.ttf');
+}
+
 
