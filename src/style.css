@@ -33,4 +33,9 @@ html, body{
   src: url('assets/fonts/Chillax/Fonts/WEB/fonts/Chillax-Semibold.ttf');
 }
 
+@font-face {
+  font-family: chillaxMedium;
+  src: url('assets/fonts/Chillax/Fonts/WEB/fonts/Chillax-Medium.ttf');
+}
+
 

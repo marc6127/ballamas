@@ -3,20 +3,20 @@
         name: "ButtonComponent",
         props: {
             name: {
-            type: String,
+                type: String,
             },
             classes: {
-            type: Array,
-            required: true
+                type: Array,
+                required: true
             },
             iconStart: {
-            type: String,
+                type: String,
             },
             iconEnd: {
-            type: String,
+                type: String,
             },
             numbers: {
-            type: String,
+                type: String,
             },
             styleNumbersButton: {
                 type: Object, 
@@ -30,25 +30,39 @@
             classNameButton: {
                 type: Array, 
             },
+            classIconButton: {
+                type: Array, 
+            },
+            iconWidth: {
+                type: String,
+                default: '20px',
+            },
+            iconHeight: {
+                type: String,
+                default: '20px',
+            },
         }
     };
 </script>
 
 
+
 <template>
     <button :class="classes">
-        <img v-if="iconStart" :src="iconStart" class="icon-start" />
-        <span :class="classNameButton" :style="styleNameButton">{{ name }}</span> <span :class="classNumbersButton" :style="styleNumbersButton">{{ numbers }}</span>
-        <img v-if="iconEnd" :src="iconEnd" class="icon-end" />
+        <img v-if="iconStart" :src="iconStart" :style="{ width: iconWidth, height: iconHeight }" class="icon-start" />
+        <span :class="classNameButton" :style="styleNameButton">{{ name }}</span>
+        <span :class="classNumbersButton" :style="styleNumbersButton">{{ numbers }}</span>
+        <img v-if="iconEnd" :src="iconEnd" :style="{ width: iconWidth, height: iconHeight }" class="icon-end" />
     </button>
 </template>
+
 
 <style>
     button{
         border-radius: 100px;
         display: flex;
-        gap: 3px;
         align-items: center;
+        justify-content:center;
     }
 
     .icon-start, .icon-end {

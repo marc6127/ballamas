@@ -9,8 +9,8 @@ const navigation = ref([
   { name: 'Women', href: '#', current: false, icon: false },
   { name: 'Kids', href: '#', current: false, icon: false },
   { name: 'Collection', href: '#', current: false, icon: false },
-  { name: 'Shop', href: '#', current: false, icon: false },
-  { name: 'About Us', href: '#', current: false, icon: false },
+  { name: 'Shop', href: '/shop', current: false, icon: false },
+  { name: 'About Us', href: '/', current: false, icon: false },
   { name: 'Account', href: '#', current: false, icon: true },
   { name: 'Cart(0)', href: '/cart', current: false, icon: false },
 ]);
@@ -86,11 +86,13 @@ const otherPages = ref([
             <span class="absolute -inset-1.5" />
             <img src="../assets/icons/searchIcons.svg" aria-hidden="true">
           </button>
-          <button type="button" class="relative rounded-full lg:hidden">
-            <span class="absolute -inset-1.5" />
-            <img src="../assets/icons/cartIcons.svg" aria-hidden="true">
-          </button>
-        </div>
+            <router-link to="/shop">
+              <button type="button" class="relative rounded-full lg:hidden">
+                <span class="absolute -inset-1.5" />
+                  <img src="../assets/icons/cartIcons.svg" aria-hidden="true" alt="Cart Icon">
+              </button>
+            </router-link>
+          </div>
         </div>
         
       </div>

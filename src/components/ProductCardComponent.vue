@@ -4,13 +4,17 @@ import axios from 'axios';
 
 export default {
   name: 'ProductCardComponent',
+  props: {
+    numbersProduct: {
+    type: Number,
+    },
+  },
   components: {
     ButtonComponent,
   },
   
   data() {
     return {
-      //imageCardUrl: ''
       lesImages: []
     };
   },
@@ -21,7 +25,6 @@ export default {
     async getImage() {
       try {
         const response = await axios.get('https://mock.shop/api?query=%7B%20products(first%3A%2020)%20%7B%20edges%20%7B%20node%20%7B%20id%20title%20description%20featuredImage%20%7B%20id%20url%20%7D%20variants(first%3A%203)%20%7B%20edges%20%7B%20node%20%7B%20price%20%7B%20amount%20currencyCode%20%7D%20%7D%20%7D%20%7D%20%7D%20%7D%20%7D%7D');
-        console.log(response.data.data.products.edges)
         this.lesImages = response.data.data.products.edges;
       } catch (error) {
         console.error(error);
@@ -35,17 +38,18 @@ export default {
 
 
 <template>
-  <div class="pt-9 w-full" v-for="(item, index) in lesImages.slice(1, 7)" :key="index">
+  <div class="pt-9 w-full" v-for="(item, index) in lesImages.slice(6, 6+numbersProduct)" :key="index">
       <div class="imageProduct py-5 px-5 relative group" :style="{ backgroundImage: `url(${item.node.featuredImage.url})` }">
         <div class="absolute transition duration-500 ease-in-out inset-0 hover:bg-black hover:bg-opacity-25 rounded-[32px]"></div>
-          <ButtonComponent v-if="index==0 || index==2 || index==4"
+          <ButtonComponent v-if="index % 2 === 0"
             :name="'GET OFF 20%'" 
             :classes="['bg-white py-1.5 px-2.5 z-[10] relative']"
             :styleNameButton="{ fontFamily: 'archivoSemibold'}"
             :classNameButton="['text-xs text-center']"
           />
 
-        <div class="productButton flex justify-center mt-[290px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-[10] relative">
+        <div :class="'productButton flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-[10] relative'"
+        :style="index % 2 === 0 ? 'margin-top: 290px;' : 'margin-top: 320px;'">
           <ButtonComponent 
             :iconStart="'src/assets/icons/cart.svg'"
             :name="'ADD TO CART'" 
@@ -64,7 +68,7 @@ export default {
       <div class="bg-white pt-3">
           <div class="cardTitle text-black font-semibold text-2xl">{{ item.node.title }}</div>
           <p class="text-[#7e7e7e] text-xl cardPrice">
-          $99
+            $ {{ item.node.variants.edges[0].node.price.amount }}
           </p>
       </div>
   </div>

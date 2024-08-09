@@ -90,7 +90,7 @@ export default {
           />
           <ButtonComponent
             :iconStart="'src/assets/icons/arrow.svg'"
-            :classes="['bg-white justify-center py-2 px-2']"
+            :classes="['bg-white py-2 px-2']"
           />
         </div>
       </div>
@@ -141,7 +141,7 @@ export default {
 
     <div class="space-y-8">
       <div class="pt-9 flex-wrap space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4 lg:space-y-0 lg:gap-4 lg:grid lg:grid-cols-3">
-        <ProductCardComponent />
+        <ProductCardComponent :numbersProduct="6" />
       </div>
       <div class="flex justify-center">
         <ButtonComponent 
