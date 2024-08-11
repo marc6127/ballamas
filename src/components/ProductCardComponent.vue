@@ -48,7 +48,7 @@ export default {
             :classNameButton="['text-xs text-center']"
           />
 
-        <div :class="'productButton flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-[10] relative'"
+        <div :class="'productButton flex space-x-1 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-[10] relative'"
         :style="index % 2 === 0 ? 'margin-top: 290px;' : 'margin-top: 320px;'">
           <ButtonComponent 
             :iconStart="'cart.svg'"
