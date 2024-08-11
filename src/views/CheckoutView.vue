@@ -216,7 +216,7 @@ export default {
             <div class="flex items-center justify-center">
               <router-link to="/paiement">
                 <ButtonComponent 
-                :iconEnd="'../assets/icons/arrow-right.svg'"
+                :iconEnd="'arrow-right.svg'"
                 :name="'Pay $524.00'" 
                 :classes="['bg-black w-full py-2 px-2 sm:px-3 sm:w-[316px] justify-center']"
                 :styleNameButton="{ fontFamily: 'archivoSemiBold'}"

@@ -41,7 +41,22 @@
                 type: String,
                 default: '20px',
             },
-        }
+        },
+        computed: {
+            iconStartSrc() {
+            return this.iconStart ? this.getIconSrc(this.iconStart) : null;
+            },
+            iconEndSrc() {
+            return this.iconEnd ? this.getIconSrc(this.iconEnd) : null;
+            },
+        },
+        methods: {
+            getIconSrc(iconName) {
+            const icons = import.meta.glob('../assets/icons/*.svg', { eager: true });
+            const path = `../assets/icons/${iconName}`;
+            return icons[path]?.default || ''; 
+            },
+        },
     };
 </script>
 
@@ -49,10 +64,10 @@
 
 <template>
     <button :class="classes">
-        <img v-if="iconStart" :src="iconStart" :style="{ width: iconWidth, height: iconHeight }" class="icon-start" />
+        <img v-if="iconStart" :src="iconStartSrc" :style="{ width: iconWidth, height: iconHeight }" class="icon-start" />
         <span :class="classNameButton" :style="styleNameButton">{{ name }}</span>
         <span :class="classNumbersButton" :style="styleNumbersButton">{{ numbers }}</span>
-        <img v-if="iconEnd" :src="iconEnd" :style="{ width: iconWidth, height: iconHeight }" class="icon-end" />
+        <img v-if="iconEnd" :src="iconEndSrc" :style="{ width: iconWidth, height: iconHeight }" class="icon-end" />
     </button>
 </template>
 

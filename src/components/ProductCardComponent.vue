@@ -51,7 +51,7 @@ export default {
         <div :class="'productButton flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-[10] relative'"
         :style="index % 2 === 0 ? 'margin-top: 290px;' : 'margin-top: 320px;'">
           <ButtonComponent 
-            :iconStart="'../assets/icons/cart.svg'"
+            :iconStart="'cart.svg'"
             :name="'ADD TO CART'" 
             :classes="['bg-white py-3 w-full justify-center']"
             :styleNameButton="{ fontFamily: 'JetBrains Mono'}"
