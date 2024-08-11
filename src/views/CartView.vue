@@ -114,16 +114,18 @@ export default {
               </div>
             </div>
             <div style="font-family: 'archivoSemiBold';" class="text-xs text-black pt-3 pb-4 space-y-2 font-semibold">
-              <div class="flex justify-between">
+              <div class="flex justify-between pb-2">
                 <p>Order total</p>
                 <p>$524.00</p>
               </div>
-              <ButtonComponent 
-                :name="'Checkout now'" 
-                :classes="['bg-black py-3 w-full justify-center']"
-                :styleNameButton="{ fontFamily: 'archivoSemiBold'}"
-                :classNameButton="['text-sm text-white text-center']"
-              />
+              <router-link to="/checkout">
+                <ButtonComponent 
+                  :name="'Checkout now'" 
+                  :classes="['bg-black py-3 w-full justify-center']"
+                  :styleNameButton="{ fontFamily: 'archivoSemiBold'}"
+                  :classNameButton="['text-sm text-white text-center']"
+                />
+              </router-link>
             </div>
           </div>
         </div>

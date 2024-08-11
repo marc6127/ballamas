@@ -197,7 +197,7 @@ export default {
 }
 
 .introduction {
-  font-family: "archivoSemiBold";
+  font-family: "chillaxSemiBold";
 }
 
 .title {

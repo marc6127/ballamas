@@ -13,6 +13,7 @@
     "@heroicons/vue": "^2.1.5",
     "@vue-hero-icons/outline": "^1.7.2",
     "axios": "^1.7.3",
+    "flowbite": "^2.5.1",
     "vue": "^3.4.31",
     "vue-router": "^4.4.2"
   },

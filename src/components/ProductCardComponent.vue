@@ -55,13 +55,13 @@ export default {
             :name="'ADD TO CART'" 
             :classes="['bg-white py-3 w-full justify-center']"
             :styleNameButton="{ fontFamily: 'JetBrains Mono'}"
-            :classNameButton="['text-sm text-center']"
+            :classNameButton="['text-sm text-center ml-1 font-extrabold']"
           />
           <ButtonComponent 
             :name="'BUY NOW'" 
             :classes="['py-3 w-full justify-center border-white border-2']"
             :styleNameButton="{ fontFamily: 'JetBrains Mono'}"
-            :classNameButton="['text-sm text-center text-white']"
+            :classNameButton="['text-sm text-center font-extrabold text-white']"
           />
         </div>
       </div>

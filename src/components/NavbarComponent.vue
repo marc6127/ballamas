@@ -10,9 +10,9 @@ const navigation = ref([
   { name: 'Kids', href: '#', current: false, icon: false },
   { name: 'Collection', href: '#', current: false, icon: false },
   { name: 'Shop', href: '/shop', current: false, icon: false },
-  { name: 'About Us', href: '/', current: false, icon: false },
+  { name: 'About Us', href: '#', current: false, icon: false },
   { name: 'Account', href: '#', current: false, icon: true },
-  { name: 'Cart(0)', href: '/cart', current: false, icon: false },
+  { name: 'Cart(3)', href: '/cart', current: false, icon: false },
 ]);
 
 const categories = navigation.value.slice(0, 4);
@@ -60,7 +60,9 @@ const otherPages = ref([
         </div>
 
         <div class="flex flex-shrink-0 items-center">
-          <img class="h-8 w-auto" src="../assets/pictures/logo.png" alt="logo" />
+          <router-link to="/">
+            <img class="h-8 w-auto" src="../assets/pictures/logo.png" alt="logo" />
+          </router-link>
         </div>
 
         <div class="lg:space-x-4 lg:flex">
@@ -86,7 +88,7 @@ const otherPages = ref([
             <span class="absolute -inset-1.5" />
             <img src="../assets/icons/searchIcons.svg" aria-hidden="true">
           </button>
-            <router-link to="/shop">
+            <router-link to="/cart">
               <button type="button" class="relative rounded-full lg:hidden">
                 <span class="absolute -inset-1.5" />
                   <img src="../assets/icons/cartIcons.svg" aria-hidden="true" alt="Cart Icon">

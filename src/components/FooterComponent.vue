@@ -27,7 +27,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <div class="bg-black mx-auto py-6 px-5 lg:px-8">
+    <div class="bg-black sm:w-full mx-auto py-6 px-5 lg:px-8">
       <div class="space-y-8">
         <div class="top-footer space-y-5">
             <div class="space-y-5 flex flex-col items-start justify-start lg:space-y-0 lg:flex-row lg:justify-between">
@@ -38,13 +38,13 @@ import { ref } from 'vue';
                         Subscribe to our newsletter for upcoming products and best discount for all items
                         </p>
                         <div class="form flex space-x-2">
-                        <input class="placeholder:text-white w-[199px] sm:w-[316px] placeholder:text-xs py-3 px-6 rounded-full bg-black border text-white" id="username" type="text" placeholder="Your email">
-                        <ButtonComponent 
-                            :name="'Subscribe'" 
-                            :classes="['bg-white py-2 px-6']"
-                            :styleNameButton="{ fontFamily: 'archivoSemibold', fontSize: '14px' }"
-                            :classNameButton="['font-semibold text-sm']"
-                        />
+                            <input class="placeholder:text-white w-[199px] sm:w-[316px] placeholder:text-xs py-3 px-6 rounded-full bg-black border text-white" id="username" type="text" placeholder="Your email">
+                            <ButtonComponent 
+                                :name="'Subscribe'" 
+                                :classes="['bg-white py-2 px-6']"
+                                :styleNameButton="{ fontFamily: 'archivoSemibold'}"
+                                :classNameButton="['font-semibold text-sm']"
+                            />
                         </div>
                     </div>
                 </div>
