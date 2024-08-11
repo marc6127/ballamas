@@ -14,10 +14,10 @@ export default {
   },
   data() {
     return {
-      productColorGreen: '../src/assets/pictures/product.jpg',
-      productColorPurple: '../src/assets/pictures/product.jpg',
-      productColorOcean: '../src/assets/pictures/productOcean.jpg',
-      productColorOlive: '../src/assets/pictures/productOlive.jpg',
+      productColorGreen: '../src/assets/images/product.jpg',
+      productColorPurple: '../src/assets/images/product.jpg',
+      productColorOcean: '../src/assets/images/productOcean.jpg',
+      productColorOlive: '../src/assets/images/productOlive.jpg',
 
       Colors:[
         { name: 'Green', assets: '../src/assets/colors/green.svg'},

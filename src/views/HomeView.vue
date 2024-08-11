@@ -67,9 +67,9 @@ export default {
       <div class="relative z-10 mx-6 my-12 space-y-11 sm:mx-20 sm:my-24">
         <div class="text-white text-center space-y-[18px]">
           <div class="flex space-x-1 justify-center">
-            <img src="../assets/pictures/heroBar.svg" />
+            <img src="../assets/images/heroBar.svg" />
             <p class="text-[9px] sm:text-sm hero-top">We bring new fashion to the world</p>
-            <img src="../assets/pictures/heroBar.svg" />
+            <img src="../assets/images/heroBar.svg" />
           </div>
           <div class="space-y-4 w-[291px] sm:w-full">
             <p class="title font-bold text-3xl sm:text-[42px] sm:leading-10 lg:text-5xl">
@@ -213,7 +213,7 @@ export default {
 }
 
 .classicMen {
-  background-image: url("../assets/pictures/classicMenBg.jpg");
+  background-image: url("../assets/images/classicMenBg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -222,7 +222,7 @@ export default {
 }
 
 .cta {
-  background-image: url("../assets/pictures/cta.jpg");
+  background-image: url("../assets/images/cta.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

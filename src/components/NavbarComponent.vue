@@ -61,7 +61,7 @@ const otherPages = ref([
 
         <div class="flex flex-shrink-0 items-center">
           <router-link to="/">
-            <img class="h-8 w-auto" src="../assets/pictures/logo.png" alt="logo" />
+            <img class="h-8 w-auto" src="../assets/images/logo.png" alt="logo" />
           </router-link>
         </div>
 

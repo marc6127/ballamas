@@ -32,7 +32,7 @@ import { ref } from 'vue';
         <div class="top-footer space-y-5">
             <div class="space-y-5 flex flex-col items-start justify-start lg:space-y-0 lg:flex-row lg:justify-between">
                 <div class="space-y-5">
-                    <img src="../assets/pictures/logoFooter.png" alt="Logo">
+                    <img src="../assets/images/logoFooter.png" alt="Logo">
                     <div class="space-y-5">
                         <p class="text-white w-[335px] text-xs ctaText sm:w-[452px] sm:text-sm">
                         Subscribe to our newsletter for upcoming products and best discount for all items
