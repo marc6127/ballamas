@@ -43,7 +43,7 @@ export default {
             Cart(3)
           </h4>
           <ButtonComponent 
-            :iconStart="'src/assets/icons/trash.svg'"
+            :iconStart="'../assets/icons/trash.svg'"
             :name="'Clear Cart'" 
             :classes="['bg-[#E5E5E5] py-2 px-2 sm:px-3 justify-center']"
             :styleNameButton="{ fontFamily: 'archivoMedium'}"
@@ -74,8 +74,8 @@ export default {
               </td>
               <td class="py-8 sm:py-10 flex space-x-1 items-center justify-end">
                 <ButtonComponent 
-                  :iconStart="'src/assets/icons/remove.svg'"
-                  :iconEnd="'src/assets/icons/plus.svg'"
+                  :iconStart="'../assets/icons/remove.svg'"
+                  :iconEnd="'../assets/icons/plus.svg'"
                   :name="'2'" 
                   :classes="['bg-[#E5E5E5] py-2 px-4']"
                   :styleNameButton="{ fontFamily: 'archivoMedium'}"
@@ -84,7 +84,7 @@ export default {
                   iconHeight="16px"
                 />
                 <ButtonComponent 
-                  :iconStart="'src/assets/icons/trash.svg'"
+                  :iconStart="'../assets/icons/trash.svg'"
                   :classes="['bg-[#E5E5E5] py-2 px-2']"
                   iconWidth="16px" 
                   iconHeight="16px"

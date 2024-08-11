@@ -89,7 +89,7 @@ export default {
             :classNameButton="['text-sm text-center']"
           />
           <ButtonComponent
-            :iconStart="'src/assets/icons/arrow.svg'"
+            :iconStart="'../assets/icons/arrow.svg'"
             :classes="['bg-white py-2 px-2']"
           />
         </div>
@@ -177,7 +177,7 @@ export default {
 
         <div class="cta relative w-full lg:w-[675px] flex items-end justify-center">
           <ButtonComponent 
-            :iconEnd="'src/assets/icons/arrow.svg'"
+            :iconEnd="'../assets/icons/arrow.svg'"
             :name="'Learn more'" 
             :classes="['bg-white py-3 px-5 w-[156px] mb-3.5 justify-center']"
             :styleNameButton="{ fontFamily: 'archivoSemiBold'}"

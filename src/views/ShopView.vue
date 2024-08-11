@@ -14,16 +14,16 @@ export default {
   },
   data() {
     return {
-      productColorGreen: '../src/assets/images/product.jpg',
-      productColorPurple: '../src/assets/images/product.jpg',
-      productColorOcean: '../src/assets/images/productOcean.jpg',
-      productColorOlive: '../src/assets/images/productOlive.jpg',
+      productColorGreen: '../assets/images/product.jpg',
+      productColorPurple: '../assets/images/product.jpg',
+      productColorOcean: '../assets/images/productOcean.jpg',
+      productColorOlive: '../assets/images/productOlive.jpg',
 
       Colors:[
-        { name: 'Green', assets: '../src/assets/colors/green.svg'},
-        { name: 'Purple', assets: '../src/assets/colors/purple.svg'},
-        { name: 'Ocean', assets: '../src/assets/colors/ocean.svg'},
-        { name: 'Olive', assets: '../src/assets/colors/olive.svg'}
+        { name: 'Green', assets: '../assets/colors/green.svg'},
+        { name: 'Purple', assets: '../assets/colors/purple.svg'},
+        { name: 'Ocean', assets: '../assets/colors/ocean.svg'},
+        { name: 'Olive', assets: '../assets/colors/olive.svg'}
       ],
 
       Sizes:[
