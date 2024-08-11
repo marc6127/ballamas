@@ -177,7 +177,7 @@ export default {
 
         <div class="cta relative w-full lg:w-[675px] flex items-end justify-center">
           <ButtonComponent 
-            :iconEnd="'assets/icons/arrow.svg'"
+            :iconEnd="'arrow.svg'"
             :name="'Learn more'" 
             :classes="['bg-white py-3 px-5 w-[156px] mb-3.5 justify-center']"
             :styleNameButton="{ fontFamily: 'archivoSemiBold'}"
